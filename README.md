@@ -19,5 +19,3 @@ cmake ..
 For Linux, there are a number of dependencies you might need to manually install. CMake will report if any are missing.
 
 You can also use the "run.sh" shell script if on a platform which supports it.
-
----
