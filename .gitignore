@@ -1,6 +1,8 @@
 build/
 .cache/
-debug.sh
+assets/**
+!assets/**/
+!assets/**/.gitkeep
 compile_commands.json
 perf.data
 perf.data.old
