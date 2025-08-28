@@ -1,20 +1,20 @@
 cmake_minimum_required(VERSION 3.28)
-project(untitled_game C)
+project(untitled C)
 
 set(CMAKE_C_STANDARD 11)
 
 add_subdirectory(zeta_framework)
 
-add_executable(untitled_game
+add_executable(untitled
     src/entry.c
     src/game.c
 
     src/game.h
 )
 
-target_link_libraries(untitled_game PRIVATE zfw_core)
+target_link_libraries(untitled PRIVATE zfw_core)
 
-set_target_properties(untitled_game PROPERTIES
+set_target_properties(untitled PROPERTIES
     VS_DEBUGGER_WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}"
 )
 
@@ -25,4 +25,4 @@ add_custom_target(pack_assets ALL
     VERBATIM
 )
 
-add_dependencies(untitled_game pack_assets)
+add_dependencies(untitled pack_assets)
